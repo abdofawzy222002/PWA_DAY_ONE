@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   msg.textContent = "Hello from ZaqApp JS!";
   msg.style.marginTop = "20px";
   msg.style.fontWeight = "bold";
-  msg.style.color = "green"; 
+  msg.style.color = "yellow"; 
   main.appendChild(msg);
 });
