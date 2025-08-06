@@ -1,6 +1,6 @@
 {
-    "name" : "ZaqApp - PWA Test App",
-    "short_name" : "ZaqApp",
+    "name" : "AbdoApp - PWA Test App",
+    "short_name" : "AbdoApp",
     "description" : "This is a pwa simple app",
     "start_url" : "./",
     "display" : "standalone",
@@ -31,7 +31,7 @@
             "sizes": "512x512",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "ZaqApp Screenshot 1"
+            "label": "AbdoApp Screenshot 1"
         }
     ],
     "shortcuts": [
