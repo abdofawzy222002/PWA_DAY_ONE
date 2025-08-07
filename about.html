@@ -26,15 +26,13 @@
         purposes.
       </p>
     </main>
-        <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then((reg) => console.log("Service Worker registered:", reg))
-          .catch((err) =>
-            console.error("Service Worker registration failed:", err)
-          );
-      }
+    <script>
+      workbox.routing.registerRoute(
+        ({ request }) => request.mode === "navigate",
+        new workbox.strategies.NetworkFirst({
+          cacheName: "pages",
+        })
+      );
     </script>
   </body>
 </html>
