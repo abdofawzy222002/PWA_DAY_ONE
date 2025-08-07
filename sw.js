@@ -1,18 +1,18 @@
 const CACHE_NAME = "product-app-v2";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./about.html",
-  "./contact.html",
-  "./product.html",
-  "./index.js",
-  "./main.js",
-  "./style.css",
-  "./manifest.json",
-  "./sw.js",
-  "./images/icons/icon-192.png",
-  "./images/icons/icon-512.png",
+  "/",
+  "/index.html",
+  "/about.html",
+  "/contact.html",
+  "/product.html",
+  "/index.js",
+  "/main.js",
+  "/style.css",
+  "/manifest.json",
+  "/sw.js",
+  "/images/icons/icon-192.png",
+  "/images/icons/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {
