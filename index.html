@@ -13,7 +13,8 @@
     <header>
       <h1>Welcome to AbdoApp</h1>
       <nav>
-        <a href="index.html">Home</a> | <a href="product.html">Product</a> |
+        <a href="index.html">Home</a> | 
+        <a href="product.html">Product</a> |
         <a href="about.html">About</a> |
         <a href="contact.html">Contact</a>
       </nav>
@@ -22,7 +23,16 @@
     <main>
       <p>This is a simple PWA home page.</p>
     </main>
-
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then((reg) => console.log("Service Worker registered:", reg))
+          .catch((err) =>
+            console.error("Service Worker registration failed:", err)
+          );
+      }
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
