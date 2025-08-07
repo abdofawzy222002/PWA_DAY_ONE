@@ -25,13 +25,5 @@
         <a href="mailto:abdofawzy1211@gmail.com">abdofawzy1211@gmail.com</a>
       </p>
     </main>
-    <script>
-      workbox.routing.registerRoute(
-        ({ request }) => request.mode === "navigate",
-        new workbox.strategies.NetworkFirst({
-          cacheName: "pages",
-        })
-      );
-    </script>
   </body>
 </html>

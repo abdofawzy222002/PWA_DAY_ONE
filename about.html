@@ -26,13 +26,5 @@
         purposes.
       </p>
     </main>
-    <script>
-      workbox.routing.registerRoute(
-        ({ request }) => request.mode === "navigate",
-        new workbox.strategies.NetworkFirst({
-          cacheName: "pages",
-        })
-      );
-    </script>
   </body>
 </html>

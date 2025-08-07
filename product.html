@@ -26,13 +26,5 @@
       <div id="productDetails"></div>
     </main>
     <script src="index.js"></script>
-    <script>
-      workbox.routing.registerRoute(
-        ({ request }) => request.mode === "navigate",
-        new workbox.strategies.NetworkFirst({
-          cacheName: "pages",
-        })
-      );
-    </script>
   </body>
 </html>
